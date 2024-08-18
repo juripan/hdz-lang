@@ -1,0 +1,25 @@
+{
+  "name": "hdz-lang",
+  "displayName": "HadzikLang",
+  "description": "Syntax highlighting for hadzik",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hadzik",
+      "aliases": ["Hadzik", "hadzik"],
+      "extensions": [".hdz"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hadzik",
+      "scopeName": "source.hdz",
+      "path": "./syntaxes/hadzik.tmLanguage.json"
+    }]
+  }
+}

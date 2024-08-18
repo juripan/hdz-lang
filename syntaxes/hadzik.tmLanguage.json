@@ -1,0 +1,107 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Hadzik",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#multiline_comments"
+		},
+		{
+			"include": "#control_flow"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#builtins"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#characters"
+		}
+	],
+	"repository": {
+		"multiline_comments":{
+			"begin": "\/\\*",
+			"beginCaptures": {
+				"0":{
+					"name": "comment.block.documentation"
+				}
+			},
+			"end": "\\*\/",
+			"name":"comment.block"
+		},
+		"comments":{
+			"begin": "\/\/",
+			"beginCaptures": {
+				"0":{
+					"name": "comment.line.double-slash"
+				}
+			},
+			"end": "\\\n",
+			"name":"comment.line.number-sign"
+		},
+		"control_flow": {
+			"name": "keyword.control",
+			"match": "\\b(kec|kim|ikec|inac|konec|furt|zrob)\\b"
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "storage.type",
+				"match": "\\b(naj|bul|pravda|klamstvo)\\b"
+			}]
+		},
+		"builtins":{
+			"name": "entity.name.function",
+			"match": "\\b(vychod|hutor)\\b"
+		},
+		"operators":{
+			"name": "keyword.operator.new",
+			"match": "\\b(abo|aj|ne)\\b"
+		},
+		"numbers":{
+			"name": "constant.numeric",
+			"match": "\\b([0-9]+)\\b"
+		},
+		"variables":{
+			"name": "entity.name.variable",
+			"match": "\\b([A-Za-z|_]+[0-9]*)\\b"
+		},
+		"characters": {
+			"name": "string.quoted.single",
+			"begin": "\\'",
+			"end": "\\'",
+			"patterns": [
+				{
+					"name": "constant.character.escape",
+					"match": "\\\\."
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.hdz"
+}
