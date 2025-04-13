@@ -61,7 +61,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "storage.type",
-				"match": "\\b(naj|bul|pravda|klamstvo)\\b"
+				"match": "\\b(cis|bul|pravda|klamstvo)\\b"
 			}]
 		},
 		"builtins":{
