@@ -56,12 +56,12 @@
 		},
 		"control_flow": {
 			"name": "keyword.control",
-			"match": "\\b(kec|kim|ikec|inac|konec|furt|zrob)\\b"
+			"match": "\\b(kec|kim|ikec|inac|konec|sicke|zrob)\\b"
 		},
 		"keywords": {
 			"patterns": [{
 				"name": "storage.type",
-				"match": "\\b(cif|bul|znak|naj|pravda|klamstvo)\\b"
+				"match": "\\b(cif|bul|znak|naj|lancok|furt|pravda|klamstvo)\\b"
 			}]
 		},
 		"builtins":{
