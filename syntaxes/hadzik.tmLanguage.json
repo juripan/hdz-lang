@@ -74,7 +74,7 @@
 		},
 		"numbers":{
 			"name": "constant.numeric",
-			"match": "\\b([0-9]+)\\b"
+			"match": "\\b(([\\d]+)|(0x[0-9A-Fa-f]+))\\b"
 		},
 		"variables":{
 			"name": "entity.name.variable",
